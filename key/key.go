@@ -8,7 +8,7 @@ import (
 	"io"
 	"time"
 
-	"github.com/gambol99/go-oidc/jose"
+	"github.com/jangaraj/go-oidc/jose"
 )
 
 func NewPublicKey(jwk jose.JWK) *PublicKey {

@@ -7,7 +7,7 @@ import (
 	"github.com/jonboulle/clockwork"
 
 	"github.com/coreos/pkg/health"
-	"github.com/gambol99/go-oidc/jose"
+	"github.com/jangaraj/go-oidc/jose"
 )
 
 type PrivateKeyManager interface {

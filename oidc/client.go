@@ -10,10 +10,10 @@ import (
 	"sync"
 	"time"
 
-	phttp "github.com/gambol99/go-oidc/http"
-	"github.com/gambol99/go-oidc/jose"
-	"github.com/gambol99/go-oidc/key"
-	"github.com/gambol99/go-oidc/oauth2"
+	phttp "github.com/jangaraj/go-oidc/http"
+	"github.com/jangaraj/go-oidc/jose"
+	"github.com/jangaraj/go-oidc/key"
+	"github.com/jangaraj/go-oidc/oauth2"
 )
 
 const (
@@ -408,7 +408,7 @@ func emailsToStrings(addrs []mail.Address) []string {
 //
 // NOTE(ericchiang): For development purposes Valid does not mandate 'https' for
 // URLs fields where the OIDC spec requires it. This may change in future releases
-// of this package. See: https://github.com/gambol99/go-oidc/issues/34
+// of this package. See: https://github.com/jangaraj/go-oidc/issues/34
 func (m *ClientMetadata) Valid() error {
 	if len(m.RedirectURIs) == 0 {
 		return errors.New("zero redirect URLs")

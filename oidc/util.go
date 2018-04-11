@@ -11,7 +11,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/gambol99/go-oidc/jose"
+	"github.com/jangaraj/go-oidc/jose"
 )
 
 // RequestTokenExtractor funcs extract a raw encoded token from a request.

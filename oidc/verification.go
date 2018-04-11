@@ -7,8 +7,8 @@ import (
 
 	"github.com/jonboulle/clockwork"
 
-	"github.com/gambol99/go-oidc/jose"
-	"github.com/gambol99/go-oidc/key"
+	"github.com/jangaraj/go-oidc/jose"
+	"github.com/jangaraj/go-oidc/key"
 )
 
 func VerifySignature(jwt jose.JWT, keys []key.PublicKey) (bool, error) {

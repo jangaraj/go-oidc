@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gambol99/go-oidc/jose"
+	"github.com/jangaraj/go-oidc/jose"
 )
 
 func TestIdentityFromClaims(t *testing.T) {

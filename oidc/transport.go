@@ -5,8 +5,8 @@ import (
 	"net/http"
 	"sync"
 
-	phttp "github.com/gambol99/go-oidc/http"
-	"github.com/gambol99/go-oidc/jose"
+	phttp "github.com/jangaraj/go-oidc/http"
+	"github.com/jangaraj/go-oidc/jose"
 )
 
 type TokenRefresher interface {
