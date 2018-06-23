@@ -255,7 +255,8 @@ func (c *Client) UserCredsToken(username, password string) (result TokenResponse
 // If 'grantType' == GrantTypeRefreshToken, then 'value' should be the refresh token.
 func (c *Client) RequestToken(grantType, value string) (result TokenResponse, err error) {
 	v := c.commonURLValues()
-
+	v.Del("scope")
+	v.Del("client_id")
 	v.Set("grant_type", grantType)
 	switch grantType {
 	case GrantTypeAuthCode:

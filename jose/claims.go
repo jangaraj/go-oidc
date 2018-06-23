@@ -27,6 +27,20 @@ func (c Claims) StringClaim(name string) (string, bool, error) {
 	return v, true, nil
 }
 
+func (c Claims) StringFromArrayClaim(name string) (string, bool, error) {
+	cl, ok := c[name]
+	if !ok {
+		return "", false, nil
+	}
+
+	v, ok := cl.([]interface{})
+	if !ok {
+		return "", false, fmt.Errorf("unable to parse claim as string: %v", name)
+	}
+
+	return v[0].(string), true, nil
+}
+
 func (c Claims) StringsClaim(name string) ([]string, bool, error) {
 	cl, ok := c[name]
 	if !ok {
