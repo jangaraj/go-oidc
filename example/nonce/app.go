@@ -41,7 +41,7 @@ func main() {
 		ClientSecret: clientSecret,
 		Endpoint:     provider.Endpoint(),
 		RedirectURL:  "http://127.0.0.1:5556/auth/google/callback",
-		Scopes:       []string{oidc.ScopeOpenID, "profile", "email"},
+		Scopes:       []string{oidc.ScopeOpenID, "profile"},
 	}
 
 	state := "foobar" // Don't do this in production.
